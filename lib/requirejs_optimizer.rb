@@ -43,7 +43,7 @@ module RequirejsOptimizer
     Dir.glob(RequirejsOptimizer.build_dir.join('**', file_glob).to_s).reject { |f| f =~ /manifest\.yml$|build\.txt$/ }
   end
 
-  def self.target_files(file_glob="*.*")
+  def self.target_files(file_glob="*.js")
     Dir.glob(RequirejsOptimizer.target_dir.join('**', file_glob).to_s).reject { |f| f =~ /manifest\.yml$|build\.txt$/ }
   end
 
